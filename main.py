@@ -23,3 +23,5 @@ async def on_ready():
 @bot.tree.command(name='hi')
 async def _neko(ctx):
     await ctx.response.send_message('hello')
+
+bot.run(token)
