@@ -7,8 +7,8 @@ import NekoMimi as neko
 
 print(neko.banner("scripkpy"))
 
-raw = neko.ReadFromFile('token.json')
-token = json.loads(raw)['token']
+raw = neko.ReadFromFile('config.json')
+config = json.loads(raw)['config']
 
 bot = commands.Bot(command_prefix="&",intents = discord.Intents.all())
 
@@ -24,4 +24,4 @@ async def on_ready():
 async def _neko(ctx):
     await ctx.response.send_message('hello')
 
-bot.run(token)
+bot.run(config)
