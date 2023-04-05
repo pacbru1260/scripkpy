@@ -8,3 +8,5 @@ print(neko.banner("scripkpy"))
 
 raw = neko.ReadFromFile('token.json')
 token = json.loads(raw)['token']
+
+bot = commands.Bot(command_prefix="&",intents = discord.Intents.all())
