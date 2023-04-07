@@ -7,7 +7,7 @@ import NekoMimi as neko
 
 print(neko.banner("scripkpy"))
 
-raw = neko.ReadFromFile('config.json')
+raw = neko.read('config.json')
 config = json.loads(raw)['config']
 
 bot = commands.Bot(command_prefix="&",intents = discord.Intents.all())
